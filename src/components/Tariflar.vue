@@ -141,6 +141,7 @@ onMounted(() => {
     box-shadow: 2px 2px 20px rgb(217, 215, 215), -2px -2px 20px rgb(217, 215, 215);
     padding: 50px;
     width: 450px;
+    height: fit-content;
     border-radius: 30px;
 }
 
