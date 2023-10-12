@@ -9,27 +9,27 @@ onMounted(() => {
 
 <template>
     <div class="main7">
-        <h2 data-aos="zoom-out" data-aos-duration="1500">Kursni hoziroq <br>
+        <h2 data-aos="fade-up" data-aos-duration="1500">Kursni hoziroq <br>
             olishingiz uchun <span> 6 sabab</span></h2>
-        <div data-aos="zoom-in" data-aos-duration="1500" class="cards">
-            <div class="sabablar">
+        <div  class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="sabablar">
                 <div>
                     <h3>01</h3>
-                    <p>Darslar davoimda bosqichma bosqich hayotingizdagi muamolarga yechim topasiz</p>
+                    <p>Darslar davomida bosqichma bosqich hayotingizdagi muammolarga yechim topasiz</p>
                 </div>
                 <div>
                     <h3>02</h3>
-                    <p>Har qanday qiyinchilik hayotingizda yuzaga kelganda ham sizda muamoni yechish uchun doimiy texnikalar
+                    <p>Har qanday qiyinchilik hayotingizda yuzaga kelganda ham sizda muammoni yechish uchun doimiy texnikalar
                         mavjud boladi </p>
                 </div>
                 <div>
                     <h3>03</h3>
-                    <p>Hayotingizdagi o'z juftingizni topganingizda u bilan sog'lom munosabat qurish uchun qonuniyatlar
-                        asosida hayotiy ko'nikmalar va instrumentlaringiz bo'ladi.</p>
+                    <p>Hayotingizdagi o'z juftingizni topganingizda, u bilan sog'lom munosabat qurish uchun qonuniyatlar
+                        asosida, hayotiy ko'nikmalar va instrumentlaringiz bo'ladi.</p>
                 </div>
             </div>
 
-            <div class="sabablar">
+            <div data-aos="fade-up" data-aos-duration="1500" class="sabablar">
                 <div>
                     <h3>04</h3>
                     <p>Shohista Djurabayevaning halqaro ekspertlik tizimidagi bilimlarga ega bo'lasiz</p>
@@ -40,7 +40,7 @@ onMounted(() => {
                 </div>
                 <div>
                     <h3>06</h3>
-                    <p>Ichki va tashqi dunyoyingizda o'zingizga bo'lgan ishonchinigz maksimal oshadi va o'zingizni sevishni
+                    <p>Ichki va tashqi dunyoingizda o'zingizga bo'lgan ishonchinigz maksimal oshadi va o'zingizni sevishni
                         boshlaysiz, shuni unutmang o'zini seva olmagan inson o'zgalarni ham seva olmaydi</p>
                 </div>
             </div>

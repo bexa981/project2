@@ -33,7 +33,7 @@ onMounted(() => {
                     <p data-aos="fade-right" data-aos-duration="1500">Hayotingizda genetik bir hil qaytalanuvchi
                         vaziyatlardan chiqasiz, sizni boshqaruvchi ajdodiy hislardan chiqasiz, tegishlilik qonuniga ko'ra
                         buni isbotlashni tugatasiz, o'z his-tuyg'ularizda o'z hohishlarizga ko'ra aniq hayotiy
-                        maqsadlaringini qo'yasiz </p>
+                        maqsadlaringizni qo'yasiz </p>
                 </div>
                 <div class="card">
                     <div data-aos="fade-up" data-aos-duration="1500" class="icon">
@@ -51,9 +51,9 @@ onMounted(() => {
                     <div data-aos="fade-up" data-aos-duration="1500" class="icon">
                         <img src="/images/3d-cube.png" alt="">
                     </div>
-                    <h4 data-aos="fade-right" data-aos-duration="1500">Sog'lom tanini his qilish</h4>
+                    <h4 data-aos="fade-right" data-aos-duration="1500">Sog'lom tanani his qilish</h4>
                     <p data-aos="fade-right" data-aos-duration="1500">Tana bu qalb haqida gapiradigan belgi, chunki
-                        tanangizda kasalanish yoki diskomfort, ortiqcha vazn seziladigan bo'sa yokida bor bo'lsa tana,qalb,ruh
+                        tanangizda kasallanish yoki diskomfort, ortiqcha vazn seziladigan bo'lsa yokida bor bo'lsa tana,qalb,ruh
                         uyg'un emas, siz qalbingizni eshitmaysiz, qalb bu yagona yaratuvchining uyi demak yaratuvchi bilan qalban
                         ulanmagansiz, tanani his qilish orqali qalb va ruh uyg'unligini birlashtiramiz</p>
                 </div>

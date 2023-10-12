@@ -10,22 +10,22 @@ const items = ref([{
 {
     id: 2,
     title: 'Katta daromadga chiqish uchun',
-    info: 'Bir necha yillardan beri ishlab kredit to`lashdan charchaganlar, ko`p ishlasayam pulida barakasi yo`q insonlar, o`zini yuqori daromadini oshirishdagi qo`rquvini yenga olmayotganlar uchun pullar enegiyasiga ochilib katta daromadga bosqichma bosqich chiqishni balnas qonuniga ko`ra o`rganamiz'
+    info: 'Bir necha yillardan beri ishlab kredit to`lashdan charchaganlar, ko`p ishlasayam pulida barakasi yo`q insonlar, o`zini yuqori daromadini oshirishdagi qo`rquvini yenga olmayotganlar uchun pullar enegiyasiga ochilib katta daromadga bosqichma bosqich chiqishni balanas qonuniga ko`ra o`rganamiz'
 },
 {
     id: 3,
     title: 'Qarzdorlikdan chiqish uchun',
-    info: ' Bu ko`proq ajdodiy programma: "men hamma uchun majburman, o`z hayotimda yashashga haqqim yoq", deb hisoblaydiganlar va doimiy pullardagi qaramalikdan chiqa olmayotgan insonlar uchun pullardagi erkinlikni , barakani birgalikda yaratamiz! Balans qonuniga ko`ra'
+    info: ' Bu ko`proq ajdodiy programma: "men hamma uchun majburman, o`z hayotimda yashashga haqqim yoq", deb hisoblaydiganlar va doimiy pullardagi qaramlikdan chiqa olmayotgan insonlar uchun pullardagi erkinlikni , barakani birgalikda yaratamiz! Balans qonuniga ko`ra'
 },
 {
     id: 4,
-    title: 'Ortiqcha tana vaznidan sog`lom halos bolish uchun',
-    info: 'Ortiqcha vazn bu kuchli himoya, tanadagi to`planib qolgan hafagarchiliklar, tanani his qila olmaslik, hayotdagi himoyani his qila olmaslik, dietalardan ozish marafonlari ta`sir qilmasdan charchaganlar uchun tanani his qilishni himoya tana emasligini o`rganib sog`lom qomadni yaratamiz'
+    title: 'Ortiqcha tana vaznidan sog`lom halos bo`lish uchun',
+    info: 'Ortiqcha vazn bu kuchli himoya, tanadagi to`planib qolgan hafagarchiliklar, tanani his qila olmaslik, hayotdagi himoyani his qila olmaslik, dietalardan ozish marafonlari ta`sir qilmasdan charchaganlar uchun, tanani his qilishni, himoya tana emasligini o`rganib, sog`lom qomadni yaratamiz'
 },
 {
     id: 5,
     title: 'Asl qobiliyatini ochish uchun',
-    info: 'Ish joyini tinmasdan almashtirib, ishxonaga erergiyasizlikda pul uchun majburan boradiganlar, o`ziga yoqmasada  oilani boqish uchun majbur ishlaydiganlar,erkin mazza qilib qobiliyatini ko`rsatib asl qalb kasbini birgalikda topamiz.'
+    info: 'Ish joyini tinmasdan almashtirib, ishxonaga energiyasizlikdan pul uchun majburan boradiganlar, o`ziga yoqmasada  oilani boqish uchun majbur ishlaydiganlar,erkin mazza qilib qobiliyatini ko`rsatib asl qalb kasbini birgalikda topamiz.'
 }
     , {
     id: 6,

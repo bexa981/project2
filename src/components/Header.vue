@@ -14,12 +14,12 @@ onMounted(() => {
    <div class="header">
       <div class="left-info">
          <div class="logo">
-            <p data-aos="fade-up" data-aos-duration="1500" class="name-logo">Djurabayeva</p>
-            <p data-aos="fade-right" data-aos-duration="1500" class="title">Hayotingizni 180 gradusga o’zgartirib, o’z
+            <p data-aos="" data-aos-duration="1500" class="name-logo"><img width="250px" src="/images/logotipe.png" alt=""></p>
+            <p data-aos="" data-aos-duration="1500" class="title">Hayotingizni 180 gradusga o’zgartirib, o’z
                hohish istaklaringiz orqali Orzuyingizdagi Hayotni birgalikda yaratamiz</p>
          </div>
-         <h1 data-aos="zoom-in" data-aos-duration="1500" class="name">Shohista Djurabayeva</h1>
-         <p data-aos="fade-right" data-aos-duration="1500" class="title2">Bilan birgalikda Energiyaga to’yinib o’z hayotingizni Navigatoriga aylanasiz va o’z his tuyg’ularingizda yashashni boshlaysiz</p>
+         <h1 data-aos="" data-aos-duration="1500" class="name">Hayot navigatori</h1>
+         <p data-aos="" data-aos-duration="1500" class="title2">Yohud orzularim yaratuvchisiman</p>
          <button type="button" class="show"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
    <Modal/>
       </div>
@@ -53,7 +53,7 @@ onMounted(() => {
    flex-direction: column;
    align-items: first baseline;
    padding-left: 15%;
-   padding-top: 10vh;
+   padding-top: 1vh;
 }
 
 .left-info .name-logo {
@@ -139,8 +139,8 @@ onMounted(() => {
 @media only screen and (max-width: 550px) {
    .header {
       flex-direction: column;
-      width: fit-content;
-      margin: 0;
+  
+      margin: 2px;
 
    }
 
@@ -156,7 +156,7 @@ onMounted(() => {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-left: 5%;
+      padding-left: 0%;
       padding-top: 3vh;
    }
 
@@ -174,15 +174,15 @@ onMounted(() => {
    .logo {
       display: flex;
       justify-content: space-around;
-      gap: 50px;
+     
       flex-wrap: wrap;
 
 
    }
 
    .left-info .name {
-      font-size: 5em;
-      width: 400px;
+      font-size: 4em;
+      width: fit-content;
       text-align: center;
    }
 

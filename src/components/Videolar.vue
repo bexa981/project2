@@ -15,13 +15,13 @@ onMounted(() => {
             <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
                 <vue3-video-player src="/videos/klent2info.mp4"></vue3-video-player>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1500" class="player-container">
+            <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
                 <vue3-video-player  src="/videos/klent1.mp4"></vue3-video-player>
             </div>
             <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
                 <vue3-video-player src="/videos/video7.mp4"></vue3-video-player>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1500" class="player-container">
+            <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
                 <vue3-video-player src="/videos/video8.mp4"></vue3-video-player>
             </div>
         </div>
@@ -115,10 +115,10 @@ onMounted(() => {
         padding: 20px;
     }
     .videos h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .videos .span1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .btn {

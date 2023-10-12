@@ -39,9 +39,9 @@ export default {
 
 <template>
     <div class="savollar-main">
-        <h2 data-aos="zoom-in" data-aos-duration="1500">Ko'p beriladigan <span class="span">savollar</span></h2>
+        <h2 data-aos="fade-right" data-aos-duration="1500">Ko'p beriladigan <span class="span">savollar</span></h2>
 
-        <div data-aos="zoom-out" data-aos-duration="1500" class="collapse-main">
+        <div data-aos="fade-right" data-aos-duration="1500" class="collapse-main">
             <article class="Wrapper">
                 <div v-for="(question, index) in questions" :key="question.title" class="Section">
                     <button :class="[

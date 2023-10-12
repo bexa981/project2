@@ -65,17 +65,17 @@ function sendMessage() {
 
 
                 <div class="manzil">
-                    <h3 data-aos="" data-aos-duration="1500">Djurabayeva</h3>
+                    <h3 data-aos="fade-right" data-aos-duration="1500">Djurabayeva</h3>
                     <div>
-                        <p data-aos="" data-aos-duration="1500"> Manzil: <span>Samarqand darvoza, Suzuk ota</span> </p>
+                        <p data-aos="fade-right" data-aos-duration="1500"> Manzil: <span>Toshkent shahri,Chilonzor tumani, <br> Nafosat MFY, 8-mavzesi,57-uy , 7-honadon</span> </p>
 
                     </div>
                 </div>
 
 
                 <div class="malumot">
-                    <p data-aos="" data-aos-duration="1500">Malumot uchun: <span>+998 97 017 73 71, +998 97 017 73 72</span></p>
-                    <p data-aos="" data-aos-duration="1500">shohistadjurabayeva.uz@gmail.com</p>
+                    <p data-aos="fade-right" data-aos-duration="1500">Malumot uchun: <span>+998 97 017 73 71, +998 97 017 73 72</span></p>
+                    <p data-aos="fade-right" data-aos-duration="1500">shohistadjurabayeva.uz@gmail.com</p>
                 </div>
                 <div data-aos="" data-aos-duration="1500" class="links">
                     <a target="_blank" href="https://www.instagram.com/ekspert_shohistabonu/"><img
@@ -213,11 +213,19 @@ form {
 
     .contact-main {
         margin: 5px;
-        padding: 15px;
+        padding: 20px 10px;
+        align-items: baseline;
     }
 
     .contact-main input {
         width: 90%;
+    }
+    .contact-info{
+        width: 100%;
+       
+    }
+    .links{
+        justify-content: space-around;
     }
 }
 </style>

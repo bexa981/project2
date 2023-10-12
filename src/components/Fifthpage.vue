@@ -9,8 +9,8 @@ onMounted(() => {
 
 <template>
     <div class="modullar">
-        <h2 data-aos="fade-up" data-aos-duration="1500"><span>Shohista Djurabayevaning </span> biznes <br>
-            darsligi mavzulari</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1500"><span>Shohista Djurabayevaning </span> kursining 
+            darslik <br> mavzulari</h2>
 
         <div class="all-cards">
             <div data-aos="zoom-in-right" data-aos-duration="1500" class="cards">
@@ -37,7 +37,7 @@ onMounted(() => {
                 </div>
 
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         1-dars
@@ -59,7 +59,7 @@ onMounted(() => {
                 </div>
 
             </div>
-            <div data-aos="zoom-in-right" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         2-dars
@@ -85,7 +85,7 @@ onMounted(() => {
                 </div>
 
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         3-dars
@@ -110,7 +110,7 @@ onMounted(() => {
                 </div>
 
             </div>
-            <div data-aos="zoom-in-right" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         4-dars
@@ -122,7 +122,7 @@ onMounted(() => {
                             Ona bilan munosabatlar
                         </h3>
                         <ul>
-                            <li>Turshmush o'rtoq bilan chiqisha omaslik</li>
+                            <li>Turmush o'rtoq bilan chiqisha omaslik</li>
                             <li>Inson o'zini qabul qila olmasligi</li>
                             <li>Inson o'zini ko'p narsalarga loyiq ko'ra olmasligi</li>
                             <li>Butunlay hafagarchiliklar va shikoyatlar</li>
@@ -132,14 +132,14 @@ onMounted(() => {
                 </div>
 
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         5-dars
                     </p>
                     <div class="card">
                         <h3>
-                            Otaningiz siz uchun kim
+                            Otangiz siz uchun kim
                             <br>
                             Ona va ota bu sani otang
                             <br>
@@ -157,7 +157,7 @@ onMounted(() => {
 
             </div>
 
-            <div data-aos="zoom-in-left" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         6-dars
@@ -182,7 +182,7 @@ onMounted(() => {
                 </div>
 
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         7-dars
