@@ -202,6 +202,13 @@ form {
 }
 
 @media only screen and (max-width: 550px) {
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .contact-main h2 {
         font-size: 2rem;
         text-align: center;
@@ -212,13 +219,14 @@ form {
     }
 
     .contact-main {
-        margin: 5px;
+        margin: 1px;
         padding: 20px 10px;
         align-items: baseline;
     }
 
     .contact-main input {
-        width: 90%;
+        width: 100%;
+        margin: 5px 0px;
     }
     .contact-info{
         width: 100%;
