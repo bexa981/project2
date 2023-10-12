@@ -109,6 +109,11 @@ onMounted(() => {
     color: var(--redColor);
 }
 @media only screen and (max-width: 550px) {
+    .flex-videos{
+        width: 100%;
+        margin-top: 5px;
+        padding: 20px;
+    }
     .videos h2{
         font-size: 3rem;
     }

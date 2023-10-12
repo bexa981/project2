@@ -15,7 +15,7 @@ onMounted(() => {
                 <div  class="bio-card" >
                     <img src="https://static.tildacdn.com/tild3563-3361-4632-b861-353864663334/Logo.png" alt="">
                     <div>
-                        <h4>Energy womens academy</h4>
+                        <h4><a style="color: white; text-decoration: none;" target="_blank" href="https://energywomensacademy.uz/">Energy womens academy</a></h4>
                     <p></p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ onMounted(() => {
 .jobs .bio-card{
     display: flex;
     align-items: center;
-    justify-content: center;
+    cursor: pointer;
     gap: 10px;
     width: 100%;
     padding: 10px 10px;
@@ -143,6 +143,7 @@ li{
 }
 .btn2{
     display: none;
+    width: 80%;
     margin-top: 30px;
     padding: 20px 50px 20px 50px;
     font-size: 20px;
@@ -150,18 +151,18 @@ li{
     border-radius: 20px;
     cursor: pointer;
     border: none;
-    box-shadow: 0 9px gray;
-    background-color: white;
-    color: black;
+    box-shadow: 0 9px rgb(180, 128, 128);
+    background-color: var(--redColor);
+    color: white;
     transition: .2s;
     margin-bottom: 40px;
 }
 .btn2:active{
-    box-shadow: 0 5px gray;
+    box-shadow: 0 5px rgb(180, 128, 128);
   transform: translateY(4px);
 }
 .btn2:hover{
-    background-color: rgb(219, 216, 216);
+    background-color: rgb(191, 52, 52);
 }
 @media only screen and (max-width: 550px) {
     .bio{

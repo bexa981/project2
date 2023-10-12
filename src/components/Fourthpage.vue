@@ -166,7 +166,7 @@ onMounted(() => {
 }
 
 .card1 .card {
-    width: 300px;
+    width: 350px;
     border: none;
     height: 450px;
     display: flex;
@@ -186,9 +186,9 @@ onMounted(() => {
     margin-bottom: 15vh;
 }
 
-.card2 .card {
+.card2 .card{
     padding: 5px;
-    width: 300px;
+    width: 350px;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -226,11 +226,11 @@ onMounted(() => {
 @media only screen and (max-width: 550px) {
     .card2 .card {
     width: 300px;
-    height: 550px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
     .konikmalar {
@@ -255,15 +255,20 @@ onMounted(() => {
 
     .cards .card2 {
         gap: 20px;
+        margin-bottom: 0;
     }
 
     .cards .card {
         display: flex;
+        width: 400px;
+        margin: 5px;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         background-color: rgb(242, 183, 183);
-        padding: 20px;
+        padding:20px;
         border-radius: 30px;
+        
     }
 
     .btn {

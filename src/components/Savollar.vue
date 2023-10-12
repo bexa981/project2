@@ -150,6 +150,7 @@ export default {
 }
 
 @media only screen and (max-width: 550px) {
+    
     .savollar-main{
         display: flex;
         flex-direction: column;
@@ -161,7 +162,8 @@ export default {
 
     .Panel {
         font-size: 1rem !important;
-        width: 350px !important;
+        width: 100% !important;
+        
     }
 
     .Section button {
@@ -170,6 +172,8 @@ export default {
 
     .Section {
         min-width: 350px !important;
+        width: 95%;
+        margin:5px;
     }
 
     .Collapse p {

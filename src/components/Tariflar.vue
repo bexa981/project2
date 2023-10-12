@@ -203,13 +203,22 @@ onMounted(() => {
 }
 
 @media only screen and (max-width: 550px) {
+    .tariflar-main{
+        margin-top: 6vh;
+    }
     .tariflar-main h2 {
         font-size: 3rem;
+        
 
+    }
+    .cards{
+        gap: 70px;
     }
 
     .cards .tarif {
-        width: 250px;
+        width: 100%;
+        margin: 5px;
+        padding: 20px;
     }
 }
 </style>

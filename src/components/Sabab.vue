@@ -116,7 +116,7 @@ onMounted(() => {
     }
 
     .main7 {
-        margin: 25vh 1vw 5vh 1vw;
+        margin: 5vh 1vw 5vh 1vw;
         text-align: center;
         background-color: black;
         color: black;

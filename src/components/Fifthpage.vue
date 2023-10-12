@@ -280,11 +280,16 @@ onMounted(() => {
 }
 
 @media only screen and (max-width: 550px) {
-
+ .all-cards{
+    width: 100%;
+ }
     .cards {
 
         margin-top: 40px;
-        width: 350px;
+        width: 100%;
+    }
+    .cards .card{
+        padding: 20px;
     }
 
     .modullar h2 {
