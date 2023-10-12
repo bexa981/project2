@@ -46,8 +46,8 @@ onMounted(() => {
     <div class="main-second">
         <div class="info-top">
             <h2 data-aos="fade-up" data-aos-duration="1500" class="kurs">BU KURS <span>KIMLAR</span> UCHUN</h2>
-            <p data-aos="fade-up" data-aos-duration="1500" class="title">Hayotida energiyasizlikdan munosabatlarda tinmay
-                konfliktdan,<br> tinmay o'zini aybdor his qiladigan,qo'rquvlardan va pulsizlikdan <br>qiynalayotgan insonlar
+            <p data-aos="fade-up" data-aos-duration="1500" class="title">Hayotida energiyasizlikdan munosabatlarda <br> tinmay
+                konfliktdan, tinmay o'zini aybdor his qiladigan,qo'rquvlardan va pulsizlikdan <br>qiynalayotgan insonlar
                 uchun </p>
         </div>
 

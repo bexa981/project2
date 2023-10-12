@@ -161,14 +161,14 @@ onMounted(() => {
    }
 
    .left-info .title {
-      font-size: 100%;
-      width: 50%;
+      font-size: 20px;
+      width: 80%;
    }
 
    .left-info .title2 {
-      font-size: 100%;
+      font-size: 22px;
       text-align: center;
-      width: 80%;
+      width: 100%;
    }
 
    .logo {
