@@ -1,0 +1,212 @@
+<script setup>
+import { onMounted, ref } from "vue";
+import Modal from "./Modal.vue";
+import AOS from "aos";
+
+onMounted(() => {
+   AOS.init();
+})
+
+
+</script>
+
+<template>
+   <div class="header">
+      <div class="left-info">
+         <div class="logo">
+            <p data-aos="fade-up" data-aos-duration="1500" class="name-logo">Djurabayeva</p>
+            <p data-aos="fade-right" data-aos-duration="1500" class="title">Hayotingizni 180 gradusga o’zgartirib, o’z
+               hohish istaklaringiz orqali Orzuyingizdagi Hayotni birgalikda yaratamiz</p>
+         </div>
+         <h1 data-aos="zoom-in" data-aos-duration="1500" class="name">Shohista Djurabayeva</h1>
+         <p data-aos="fade-right" data-aos-duration="1500" class="title2">Bilan birgalikda Energiyaga to’yinib o’z hayotingizni Navigatoriga aylanasiz va o’z his tuyg’ularingizda yashashni boshlaysiz</p>
+         <button type="button" class="show"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
+   <Modal/>
+      </div>
+      <div class="foto-profile">
+         <img src="/images/profile-foto.png" alt="">
+         <button type="button" class="hiden" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
+
+      </div>
+   </div>
+</template>
+
+<style scoped>
+.header {
+   background-color: gray;
+   display: flex;
+   justify-content: center;
+   background-image: url('https://c4.wallpaperflare.com/wallpaper/788/869/121/abstract-low-poly-digital-art-red-wallpaper-preview.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: black;
+   margin: 10px 60px 10px 60px;
+   border-radius: 70px;
+   height: fit-content;
+}
+
+.left-info {
+   width: 690px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: first baseline;
+   padding-left: 15%;
+   padding-top: 10vh;
+}
+
+.left-info .name-logo {
+   font-size: 55px;
+   font-family: 'Caveat', cursive;
+   margin-bottom: 50px;
+}
+
+.left-info p {
+   font-size: 20px;
+}
+
+.left-info .name {
+   font-size: 6rem;
+   line-height: 1em;
+   font-weight: 600;
+   font-family: 'Oswald', sans-serif;
+   margin-bottom: 40px;
+}
+
+.hiden {
+   display: none;
+   margin-top: 30px;
+   padding: 20px 50px 20px 50px;
+   font-size: 20px;
+   font-weight: 600;
+   border-radius: 20px;
+   cursor: pointer;
+   border: none;
+   box-shadow: 0 9px rgb(180, 128, 128);
+   background-color: var(--redColor);
+   color: white;
+   transition: .2s;
+}
+
+.hiden:active {
+   box-shadow: 0 5px rgb(180, 128, 128);
+   transform: translateY(4px);
+}
+
+.hiden:hover {
+   background-color: rgb(181, 67, 67);
+}
+
+.left-info button {
+   margin-top: 30px;
+   padding: 20px 50px 20px 50px;
+   font-size: 20px;
+   font-weight: 600;
+   border-radius: 20px;
+   cursor: pointer;
+   border: none;
+   box-shadow: 0 9px rgb(180, 128, 128);
+   background-color: var(--redColor);
+   color: white;
+   transition: .2s;
+   margin-bottom: 40px;
+}
+
+.left-info button:active {
+   box-shadow: 0 5px rgb(180, 128, 128);
+   transform: translateY(4px);
+}
+
+.left-info button:hover {
+   background-color: rgb(181, 67, 67);
+}
+
+.foto-profile img {
+   width: 600px;
+   padding: 0;
+}
+
+.foto-profile {
+   display: flex;
+
+   align-items: end;
+   justify-content: center;
+
+   width: 70%;
+}
+
+@media only screen and (max-width: 550px) {
+   .header {
+      flex-direction: column;
+      width: fit-content;
+      margin: 0;
+
+   }
+
+   .left-info .name-logo {
+      font-size: 35px;
+      font-family: 'Caveat', cursive;
+      margin-bottom: 40px;
+      width: fit-content;
+   }
+
+   .left-info {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 5%;
+      padding-top: 3vh;
+   }
+
+   .left-info .title {
+      font-size: 100%;
+      width: 50%;
+   }
+
+   .left-info .title2 {
+      font-size: 100%;
+      text-align: center;
+      width: 80%;
+   }
+
+   .logo {
+      display: flex;
+      justify-content: space-around;
+      gap: 50px;
+      flex-wrap: wrap;
+
+
+   }
+
+   .left-info .name {
+      font-size: 5em;
+      width: 400px;
+      text-align: center;
+   }
+
+   .hiden {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 40px;
+      width: 95%;
+   }
+
+   .show {
+      display: none;
+   }
+
+   .foto-profile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .foto-profile img {
+      width: 100%;
+      padding: 0;
+   }
+}</style>
