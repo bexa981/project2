@@ -143,7 +143,9 @@ onMounted(() => {
       margin: 2px;
 
    }
-
+.name-logo img{
+   width: 120px;
+}
    .left-info .name-logo {
       font-size: 35px;
       font-family: 'Caveat', cursive;
@@ -161,8 +163,8 @@ onMounted(() => {
    }
 
    .left-info .title {
-      font-size: 20px;
-      width: 80%;
+      font-size: 15px;
+      width: 50%;
    }
 
    .left-info .title2 {
