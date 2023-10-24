@@ -148,7 +148,9 @@ onMounted(() => {
 }
 
 @media only screen and (max-width: 550px) {
-   
+   .uzum1{
+      display: none;
+   }
    .uzum2{
       display: block;
       height: 50px!important;
