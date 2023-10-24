@@ -13,7 +13,7 @@ onMounted(() => {
             darslik <br> mavzulari</h2>
 
         <div class="all-cards">
-            <div data-aos="zoom-in-right" data-aos-duration="1500" class="cards">
+            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
                 <div>
                     <p class="left">
                         INTRODUCTION
@@ -268,7 +268,7 @@ onMounted(() => {
     line-height: 2rem;
     font-size: 18px;
     z-index: 5;
-
+    height: 600px;
     box-shadow: 5px 5px 20px rgb(191, 190, 190), -5px -5px 20px rgb(193, 192, 192);
 }
 
@@ -290,6 +290,7 @@ onMounted(() => {
     }
     .cards .card{
         padding: 20px;
+        height: auto;
     }
 
     .modullar h2 {

@@ -120,6 +120,9 @@ export default {
 .Wrapper {
     margin-bottom: 80px;
 }
+.Section:last-of-type{
+    border-bottom: 1px solid var(--redColor) !important;
+}
 
 .Section {
     background: var(--BackgroundAlternateColor);
