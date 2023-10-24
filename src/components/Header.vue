@@ -41,7 +41,7 @@ onMounted(() => {
    background-color: gray;
    display: flex;
    justify-content: center;
-   background-image: url('https://c4.wallpaperflare.com/wallpaper/788/869/121/abstract-low-poly-digital-art-red-wallpaper-preview.jpg');
+   background-image: url('https://cdn.wallpapersafari.com/93/45/lfGM16.jpg');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
