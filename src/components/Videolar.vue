@@ -26,6 +26,7 @@ onMounted(() => {
             </div>
         </div>
         <div data-aos="zoom-out" data-aos-duration="1500" class="btn">
+            <a class="uzum" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
             <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
             <p>Kursga xoziroq ro'yhatan o'tmoqchimisiz unda shoshiling</p>
 
@@ -70,10 +71,15 @@ onMounted(() => {
     height: 350px;
    
 }
+.uzum{
+    border-top: 2px solid rgb(117, 85, 150);
+    border-left: 2px solid rgb(117, 85, 150);
+    border-right: 2px solid rgb(117, 85, 150);
+}
 
 .btn {
     margin-top: 40px;
-    width: 500px;
+    width: auto;
     padding: 10px;
     border: 3px dashed gray;
     border-radius: 20px;
@@ -109,6 +115,9 @@ onMounted(() => {
     color: var(--redColor);
 }
 @media only screen and (max-width: 550px) {
+    .uzum{
+        width: 100%;
+    }
     .flex-videos{
         width: 100%;
         margin-top: 5px;
@@ -130,6 +139,8 @@ onMounted(() => {
 }
 .btn button{
     padding: 10px;
+    height: 80px;
+    margin-top: 10px;
 }
 
 }

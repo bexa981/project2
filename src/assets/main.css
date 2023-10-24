@@ -12,3 +12,23 @@
   --BackgroundColor: #1a1a1a;
   --BackgroundAlternateColor: #fff;
 }
+.uzum{
+  width: 235px;
+  height: 70px;
+  background-image: url('https://api.logobank.uz/media/logos_png/UZUM_BANK-01.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 16px;
+  background-color: white;
+  padding: 39px;
+  box-shadow: 0 9px rgb(117, 85, 150);
+  transition: .2s;
+}
+.uzum:hover{
+  background-color: whitesmoke;
+}
+.uzum:active{
+  box-shadow: 0 5px rgb(180, 128, 128);
+  transform: translateY(4px);
+}

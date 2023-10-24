@@ -31,6 +31,7 @@ onMounted(() => {
             </div>
             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
                 class="btn2">Ariza qoldirish</button>
+                <a class="uzum uzum2" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
             <Modal />
         </div>
 
@@ -47,8 +48,12 @@ onMounted(() => {
                     turmush quradi. Energy womens academiyasiga tasis soladi, shahsiy ofisini ochadi va asl qalb kasbida har
                     oyda erkin grafik asosida 15 kun ishlab o'rtacha 5000$ - 8000$ gacha daromadga 6 oy ichida chiqqan.</li>
             </ul>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+            <div class="market">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
                 class="btn1">Ariza qoldirish</button>
+                <a class="uzum uzum1" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
+            </div>
+           
         </div>
 
     </div>
@@ -70,8 +75,25 @@ onMounted(() => {
     flex-wrap: wrap;
     border-radius: 70px;
     height: fit-content;
-}
 
+}
+.uzum{
+    border-top: 2px solid rgb(117, 85, 150);
+    border-left: 2px solid rgb(117, 85, 150);
+    border-right: 2px solid rgb(117, 85, 150);
+}
+.uzum2{
+    display: none;
+}
+.market{
+    display: flex;
+    align-items: center;
+    gap:5px;
+
+}
+.uzum{
+    margin-top: -7px;
+}
 .bio-image {
     width: 36%;
     height: fit-content;
@@ -140,6 +162,7 @@ li {
 
 .bio-info .btn1 {
     margin-top: 30px;
+    height: 80px;
     padding: 20px 50px 20px 50px;
     font-size: 20px;
     font-weight: 600;
@@ -189,6 +212,17 @@ li {
 }
 
 @media only screen and (max-width: 550px) {
+    .uzum2{
+        display: block;
+        margin-bottom: 20px;
+        width: 81%;
+        height: 40px!important;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
+    .uzum1{
+        display: none;
+    }
     .bio {
         flex-direction: column-reverse;
         width:100%;
@@ -219,7 +253,7 @@ li {
 
     .btn2 {
         display: block;
-
+        height: 80px;
 
     }
 

@@ -81,6 +81,7 @@ onMounted(() => {
         </div>
 
         <div data-aos="zoom-out" data-aos-duration="1500" class="btn">
+            <a class="uzum" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
             <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
             
             <p> Bu kurs aniq siz uchun,
@@ -98,10 +99,14 @@ onMounted(() => {
     flex-direction: column;
     align-items: center;
 }
-
+.uzum{
+    border-top: 2px solid rgb(117, 85, 150);
+    border-left: 2px solid rgb(117, 85, 150);
+    border-right: 2px solid rgb(117, 85, 150);
+}
 .btn {
     margin-top: 40px;
-    width: 500px;
+    width: auto;
     padding: 10px;
     border: 3px dashed gray;
     border-radius: 20px;
@@ -224,6 +229,9 @@ onMounted(() => {
 }
 
 @media only screen and (max-width: 550px) {
+    .uzum{
+        width: 100%;
+    }
     .card2 .card {
     width: 300px;
     height: fit-content;
@@ -276,9 +284,11 @@ onMounted(() => {
         align-items: center;
         justify-content: center;
         width: fit-content;
+        
     }
 
     .btn button {
         padding: 10px;
+        height: 80px;
     }
 }</style>

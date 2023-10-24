@@ -20,13 +20,18 @@ onMounted(() => {
          </div>
          <h1 data-aos="" data-aos-duration="1500" class="name">Hayot navigatori</h1>
          <p data-aos="" data-aos-duration="1500" class="title2">Yohud orzularim yaratuvchisiman</p>
+         <a class="uzum uzum1" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
          <button type="button" class="show"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
    <Modal/>
       </div>
       <div class="foto-profile">
          <img src="/images/profile-foto.png" alt="">
-         <button type="button" class="hiden" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
-
+         
+            <button type="button" class="hiden" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
+            <a class="uzum uzum2" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
+            
+        
+         
       </div>
    </div>
 </template>
@@ -44,6 +49,12 @@ onMounted(() => {
    margin: 10px 60px 10px 60px;
    border-radius: 70px;
    height: fit-content;
+}
+.uzum1{
+   display: block;
+}
+.uzum2{
+  display: none;
 }
 
 .left-info {
@@ -137,6 +148,17 @@ onMounted(() => {
 }
 
 @media only screen and (max-width: 550px) {
+   
+   .uzum2{
+      display: block;
+      height: 50px!important;
+      background-size:200px;
+      background-repeat: no-repeat;
+   width: 95%;
+   height: 80px;
+   margin-bottom: 50px;
+}
+
    .header {
       flex-direction: column;
   
