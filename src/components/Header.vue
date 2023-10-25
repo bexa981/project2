@@ -41,7 +41,7 @@ onMounted(() => {
    background-color: gray;
    display: flex;
    justify-content: center;
-   background-image: url('https://cdn.wallpapersafari.com/93/45/lfGM16.jpg');
+   background-image: url('./images/bg.webp');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
