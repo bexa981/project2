@@ -41,7 +41,7 @@ onMounted(() => {
    background-color: gray;
    display: flex;
    justify-content: center;
-   background-image: url('./images/bg.webp');
+   background-image: url('/images/bg.webp');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
