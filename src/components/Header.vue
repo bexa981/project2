@@ -1,37 +1,90 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import AggrementModal from "./AggrementModal.vue";
 import Modal from "./Modal.vue";
+import Offerta from "./Offerta.vue"
 import AOS from "aos";
+import { onMounted, ref } from "vue";
 
 onMounted(() => {
    AOS.init();
 })
+const showAgreement = ref(true);
+const isOpenModel = ref(false);
+const showPayment = ref(false);
 
+// Define methods
+const handleClickItem = () => {
+   isOpenModel.value = true;
+   // Handle logic to show the payment section
+   showAgreement.value = true;
+   showPayment.value = false;
+};
+
+const processPayment = () => {
+   showAgreement.value = false;
+   showPayment.value = true;
+   console.log('success');
+};
+
+showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
 
 </script>
 
 <template>
    <div class="header">
+      <AggrementModal :open="isOpenModel" @close="isOpenModel = false">
+         <div>
+            <div class="modalBody">
+               <div v-if="showAgreement">
+
+
+                  <h3 style="text-align: center;">Публичная оферта</h3>
+                  <p>
+                     <Offerta />
+                  </p>
+                  <div class="tolov">
+                     <div>
+                        <input id="roziman" type="checkbox">
+                        <label for="roziman">Roziman</label>
+                     </div>
+                     <button @click="processPayment">To'lov qilish</button>
+                    
+                  </div>
+               </div>
+                 <h3>To'lov qilish usulini tanlang</h3>
+               <div v-if="showPayment" class="usullari">
+                        <!-- Display your payment form or component here -->
+                       <a target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s" alt=""></a>
+                       <a target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
+                        
+                     </div>
+            </div>
+         </div>
+      </AggrementModal>
       <div class="left-info">
          <div class="logo">
-            <p data-aos="" data-aos-duration="1500" class="name-logo"><img width="250px" src="/images/logotipe.png" alt=""></p>
+            <p data-aos="" data-aos-duration="1500" class="name-logo"><img width="250px" src="/images/logotipe.png" alt="">
+            </p>
             <p data-aos="" data-aos-duration="1500" class="title">Hayotingizni 180 gradusga o’zgartirib, o’z
                hohish istaklaringiz orqali Orzuyingizdagi Hayotni birgalikda yaratamiz</p>
          </div>
          <h1 data-aos="" data-aos-duration="1500" class="name">Hayot navigatori</h1>
          <p data-aos="" data-aos-duration="1500" class="title2">Yohud orzularim yaratuvchisiman</p>
-         <a class="uzum uzum1" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
-         <button type="button" class="show"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
-   <Modal/>
+
+         <button @click="handleClickItem()" class="show">To'lov qilish</button>
+         <button type="button" class="show" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Ariza qoldirish</button>
+         <Modal />
       </div>
       <div class="foto-profile">
          <img src="/images/profile-foto.png" alt="">
-         
-            <button type="button" class="hiden" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ariza qoldirish</button>
-            <a class="uzum uzum2" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
-            
-        
-         
+
+         <button type="button" class="hiden" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Ariza qoldirish</button>
+         <button @click="handleClickItem()" class="hiden">To'lov qilish</button>
+
+
+
       </div>
    </div>
 </template>
@@ -50,11 +103,53 @@ onMounted(() => {
    border-radius: 70px;
    height: fit-content;
 }
-.uzum1{
+
+.tolov {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+.usullari img{
+  width: 120px;
+}
+.usullari a{
+ border: 1px solid black;
+ border-radius: 5px;
+ padding: 10px;
+ margin-left: 5px;
+}
+.tolov button {
+   padding: 5px;
+   border-radius: 5px;
+   background-color: var(--redColor);
+   color: white;
+   border: none;
+}
+
+.tolov div {
+   display: flex;
+   gap: 10px;
+}
+
+input[type="checkbox"] {
+   width: 20px;
+   height: 20px;
+   color: green;
+   background-color: green;
+}
+
+input[type="checkbox"]:checked+label {
+   color: green;
+   /* Change the color to your desired color */
+}
+
+.uzum1 {
    display: block;
 }
-.uzum2{
-  display: none;
+
+.uzum2 {
+   display: none;
 }
 
 .left-info {
@@ -110,7 +205,8 @@ onMounted(() => {
 }
 
 .left-info button {
-   margin-top: 30px;
+   margin-top: 5px;
+   width: 300px;
    padding: 20px 50px 20px 50px;
    font-size: 20px;
    font-weight: 600;
@@ -148,28 +244,31 @@ onMounted(() => {
 }
 
 @media only screen and (max-width: 550px) {
-   .uzum1{
+   .uzum1 {
       display: none;
    }
-   .uzum2{
+
+   .uzum2 {
       display: block;
-      height: 50px!important;
-      background-size:200px;
+      height: 50px !important;
+      background-size: 200px;
       background-repeat: no-repeat;
-   width: 95%;
-   height: 80px;
-   margin-bottom: 50px;
-}
+      width: 95%;
+      height: 80px;
+      margin-bottom: 50px;
+   }
 
    .header {
       flex-direction: column;
-  
+
       margin: 2px;
 
    }
-.name-logo img{
-   width: 120px;
-}
+
+   .name-logo img {
+      width: 120px;
+   }
+
    .left-info .name-logo {
       font-size: 35px;
       font-family: 'Caveat', cursive;
@@ -200,7 +299,7 @@ onMounted(() => {
    .logo {
       display: flex;
       justify-content: space-around;
-     
+
       flex-wrap: wrap;
 
 

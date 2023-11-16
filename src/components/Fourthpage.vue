@@ -2,6 +2,30 @@
 import { onMounted } from "vue";
 import AOS from "aos";
 import Modal from "./Modal.vue";
+import AggrementModal from "./AggrementModal.vue";
+import Offerta from "./Offerta.vue"
+import {  ref } from "vue";
+
+
+const showAgreement = ref(true);
+const isOpenModel = ref(false);
+const showPayment = ref(false);
+
+// Define methods
+const handleClickItem = () => {
+   isOpenModel.value = true;
+   // Handle logic to show the payment section
+   showAgreement.value = true;
+   showPayment.value = false;
+};
+
+const processPayment = () => {
+   showAgreement.value = false;
+   showPayment.value = true;
+   console.log('success');
+};
+
+showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
 
 onMounted(() => {
     AOS.init();
@@ -10,6 +34,35 @@ onMounted(() => {
 
 <template>
     <div class="konikmalar">
+        <AggrementModal :open="isOpenModel" @close="isOpenModel = false">
+         <div>
+            <div class="modalBody">
+               <div v-if="showAgreement">
+
+
+                  <h3 style="text-align: center;">Публичная оферта</h3>
+                  <p>
+                     <Offerta />
+                  </p>
+                  <div class="tolov">
+                     <div>
+                        <input id="roziman" type="checkbox">
+                        <label for="roziman">Roziman</label>
+                     </div>
+                     <button @click="processPayment">To'lov qilish</button>
+                    
+                  </div>
+               </div>
+                 <h3>To'lov qilish usulini tanlang</h3>
+               <div v-if="showPayment" class="usullari">
+                        <!-- Display your payment form or component here -->
+                       <a target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s" alt=""></a>
+                       <a target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
+                        
+                     </div>
+            </div>
+         </div>
+      </AggrementModal>
         <h2 data-aos="fade-up" data-aos-duration="1500">Kursdan so'ng qanday <br>
             <span class="span1"> ko’nikmalarga</span> ega bo’lasiz?
         </h2>
@@ -81,8 +134,8 @@ onMounted(() => {
         </div>
 
         <div data-aos="zoom-out" data-aos-duration="1500" class="btn">
-            <a class="uzum" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
-            <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
+           <button @click="handleClickItem()">To'lov qilish</button>
+           
             
             <p> Bu kurs aniq siz uchun,
                  <span class="span"> 30% chegirma olib </span> xoziroq kursga a'zo bo'ling</p>
@@ -104,6 +157,46 @@ onMounted(() => {
     border-left: 2px solid rgb(117, 85, 150);
     border-right: 2px solid rgb(117, 85, 150);
 }
+.tolov {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+.usullari img{
+  width: 120px;
+}
+.usullari a{
+ border: 1px solid black;
+ border-radius: 5px;
+ padding: 10px;
+ margin-left: 5px;
+}
+.tolov button {
+   padding: 5px;
+   border-radius: 5px;
+   background-color: var(--redColor);
+   color: white;
+   border: none;
+}
+
+.tolov div {
+   display: flex;
+   gap: 10px;
+}
+
+input[type="checkbox"] {
+   width: 20px;
+   height: 20px;
+   color: green;
+   background-color: green;
+}
+
+input[type="checkbox"]:checked+label {
+   color: green;
+   /* Change the color to your desired color */
+}
+
 .btn {
     margin-top: 40px;
     width: auto;

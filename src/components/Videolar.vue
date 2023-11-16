@@ -26,7 +26,7 @@ onMounted(() => {
             </div>
         </div>
         <div data-aos="zoom-out" data-aos-duration="1500" class="btn">
-            <a class="uzum" href="https://www.apelsin.uz/open-service?serviceId=498611485"></a>
+           
             <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
             <p>Kursga xoziroq ro'yhatan o'tmoqchimisiz unda shoshiling</p>
 
