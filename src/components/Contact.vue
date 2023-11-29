@@ -43,8 +43,8 @@ function sendMessage() {
 <template>
     <div class="contact-main">
         <div>
-            <h2 data-aos="" data-aos-duration="1500">Hali ham <span class="span">Savolaringiz </span>bormi?</h2>
-            <p data-aos="" data-aos-duration="1500" class="title">Ma’lumotlaringizni qoldiring, <br>
+            <h2 >Hali ham <span class="span">Savolaringiz </span>bormi?</h2>
+            <p  class="title">Ma’lumotlaringizni qoldiring, <br>
                 bizning mutaxassislar sizning <br>
                 muammoingizga yechim berishadi</p>
 
@@ -65,19 +65,19 @@ function sendMessage() {
 
 
                 <div class="manzil">
-                    <h3 data-aos="fade-right" data-aos-duration="1500">Djurabayeva</h3>
+                    <h3 >Djurabayeva</h3>
                     <div>
-                        <p data-aos="fade-right" data-aos-duration="1500"> Manzil: <span>Toshkent shahri,Chilonzor tumani, <br> Nafosat MFY, 8-mavzesi,57-uy , 7-honadon</span> </p>
+                        <p > Manzil: <span>Toshkent shahri,Chilonzor tumani, <br> Nafosat MFY, 8-mavzesi,57-uy , 7-honadon</span> </p>
 
                     </div>
                 </div>
 
 
                 <div class="malumot">
-                    <p data-aos="fade-right" data-aos-duration="1500">Malumot uchun: <span>+998 97 017 73 71, +998 97 017 73 72</span></p>
-                    <p data-aos="fade-right" data-aos-duration="1500">shohistadjurabayeva.uz@gmail.com</p>
+                    <p >Malumot uchun: <span>+998 97 017 73 71, +998 97 017 73 72</span></p>
+                    <p >shohistadjurabayeva.uz@gmail.com</p>
                 </div>
-                <div data-aos="" data-aos-duration="1500" class="links">
+                <div  class="links">
                     <a target="_blank" href="https://www.instagram.com/ekspert_shohistabonu/"><img
                             src="/images/instagram.png" alt=""></a>
                     <a target="_blank" href="https://t.me/energywomensacademy"><img src="/images/telegram.png"
@@ -200,6 +200,18 @@ form {
 .links a:hover {
     transform: scale(1.1);
 }
+@media only screen and (max-width: 1615px) {
+.contact-main{
+    margin: 1px;
+        padding: 20px 10px;
+        align-items: baseline;
+}
+}
+@media only screen and (max-width: 1300px) {
+ .contact-main{
+    justify-content: center;
+ }
+}
 
 @media only screen and (max-width: 550px) {
     form{
@@ -218,11 +230,7 @@ form {
         width: 100%;
     }
 
-    .contact-main {
-        margin: 1px;
-        padding: 20px 10px;
-        align-items: baseline;
-    }
+   
 
     .contact-main input {
         width: 100%;

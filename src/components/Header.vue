@@ -1,7 +1,7 @@
 <script setup>
 import AggrementModal from "./AggrementModal.vue";
 import Modal from "./Modal.vue";
-import Offerta from "./Offerta.vue"
+
 import AOS from "aos";
 import { onMounted, ref } from "vue";
 
@@ -17,7 +17,7 @@ const handleClickItem = () => {
    isOpenModel.value = true;
    // Handle logic to show the payment section
    showAgreement.value = true;
-   showPayment.value = false;
+   showPayment.value = true;
 };
 
 const processPayment = () => {
@@ -35,41 +35,29 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
       <AggrementModal :open="isOpenModel" @close="isOpenModel = false">
          <div>
             <div class="modalBody">
-               <div v-if="showAgreement">
-
-
-                  <h3 style="text-align: center;">Публичная оферта</h3>
-                  <p>
-                     <Offerta />
-                  </p>
-                  <div class="tolov">
-                     <div>
-                        <input id="roziman" type="checkbox">
-                        <label for="roziman">Roziman</label>
-                     </div>
-                     <button @click="processPayment">To'lov qilish</button>
-                    
-                  </div>
-               </div>
-                 <h3>To'lov qilish usulini tanlang</h3>
+               
+               <h3 class="tolovQilish">To'lov qilish usulini tanlang</h3>
                <div v-if="showPayment" class="usullari">
-                        <!-- Display your payment form or component here -->
-                       <a target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s" alt=""></a>
-                       <a target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
-                        
-                     </div>
+                  <!-- Display your payment form or component here -->
+                  <a class="payme" target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s"
+                        alt=""></a>
+                  <a class="uzumm" target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img
+                        src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
+
+               </div>
             </div>
          </div>
       </AggrementModal>
       <div class="left-info">
          <div class="logo">
-            <p data-aos="" data-aos-duration="1500" class="name-logo"><img width="250px" src="/images/logotipe.png" alt="">
+            <p class="name-logo"><img width="250px" src="/images/logotipe.png" alt="">
             </p>
-            <p data-aos="" data-aos-duration="1500" class="title">Hayotingizni 180 gradusga o’zgartirib, o’z
+            <p class="title">Hayotingizni 180 gradusga o’zgartirib, o’z
                hohish istaklaringiz orqali Orzuyingizdagi Hayotni birgalikda yaratamiz</p>
          </div>
-         <h1 data-aos="" data-aos-duration="1500" class="name">Hayot navigatori</h1>
-         <p data-aos="" data-aos-duration="1500" class="title2">Yohud orzularim yaratuvchisiman</p>
+         <h1 class="name">Hayot navigatori</h1>
+         <p class="title2">Yohud orzularim yaratuvchisiman</p>
 
          <button @click="handleClickItem()" class="show">To'lov qilish</button>
          <button type="button" class="show" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -110,14 +98,34 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
    align-items: center;
    padding: 10px;
 }
-.usullari img{
-  width: 120px;
+.tolovQilish{
+   font-size: 22px;
+   margin: 20px 0px;
 }
-.usullari a{
- border: 1px solid black;
- border-radius: 5px;
- padding: 10px;
- margin-left: 5px;
+
+.usullari img {
+   width: 120px;
+}
+.usullari{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+
+.usullari a {
+   
+   border-radius: 5px;
+   padding: 10px;
+   margin-left: 5px;
+   transition: .3s;
+   
+}
+.usullari .payme{
+   box-shadow: 2px 2px 10px rgb(114, 224, 220);
+}
+.usullari .uzumm{
+   box-shadow: 2px 2px 10px rgb(147, 34, 217);
 }
 .tolov button {
    padding: 5px;
@@ -205,9 +213,9 @@ input[type="checkbox"]:checked+label {
 }
 
 .left-info button {
-   margin-top: 5px;
+   margin-top: 0px;
    width: 300px;
-   padding: 20px 50px 20px 50px;
+   padding: 20px 50px ;
    font-size: 20px;
    font-weight: 600;
    border-radius: 20px;
@@ -217,7 +225,7 @@ input[type="checkbox"]:checked+label {
    background-color: var(--redColor);
    color: white;
    transition: .2s;
-   margin-bottom: 40px;
+   margin-bottom: 20px;
 }
 
 .left-info button:active {
@@ -241,6 +249,23 @@ input[type="checkbox"]:checked+label {
    justify-content: center;
 
    width: 70%;
+}
+@media only screen and (max-width: 1250px) {
+   .header{
+      margin: 0;
+      
+   }
+   .left-info{
+      padding-left: 50px;
+   }
+}
+@media only screen and (max-width: 947px) {
+   .header{
+      margin: 0;
+      flex-wrap: wrap;
+      
+   }
+   
 }
 
 @media only screen and (max-width: 550px) {

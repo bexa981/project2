@@ -15,8 +15,8 @@ const showPayment = ref(false);
 const handleClickItem = () => {
    isOpenModel.value = true;
    // Handle logic to show the payment section
-   showAgreement.value = true;
-   showPayment.value = false;
+   showAgreement.value = false;
+   showPayment.value = true;
 };
 
 const processPayment = () => {
@@ -37,27 +37,12 @@ onMounted(() => {
         <AggrementModal :open="isOpenModel" @close="isOpenModel = false">
          <div>
             <div class="modalBody">
-               <div v-if="showAgreement">
-
-
-                  <h3 style="text-align: center;">Публичная оферта</h3>
-                  <p>
-                     <Offerta />
-                  </p>
-                  <div class="tolov">
-                     <div>
-                        <input id="roziman" type="checkbox">
-                        <label for="roziman">Roziman</label>
-                     </div>
-                     <button @click="processPayment">To'lov qilish</button>
-                    
-                  </div>
-               </div>
-                 <h3>To'lov qilish usulini tanlang</h3>
+               
+                 <h3 class="tolovQilish">To'lov qilish usulini tanlang</h3>
                <div v-if="showPayment" class="usullari">
                         <!-- Display your payment form or component here -->
-                       <a target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s" alt=""></a>
-                       <a target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
+                       <a class="payme" target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s" alt=""></a>
+                       <a class="uzumm" target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
                         
                      </div>
             </div>
@@ -166,11 +151,24 @@ onMounted(() => {
 .usullari img{
   width: 120px;
 }
-.usullari a{
- border: 1px solid black;
- border-radius: 5px;
- padding: 10px;
- margin-left: 5px;
+.usullari a {
+   
+   border-radius: 5px;
+   padding: 15px;
+   margin-left: 5px;
+   transition: .3s;
+   
+}
+.usullari .payme{
+   box-shadow: 2px 2px 10px rgb(114, 224, 220);
+}
+.usullari .uzumm{
+   box-shadow: 2px 2px 10px rgb(147, 34, 217);
+}
+.tolovQilish{
+   font-size: 22px;
+   color: black;
+   margin: 20px 0px;
 }
 .tolov button {
    padding: 5px;
@@ -321,6 +319,25 @@ input[type="checkbox"]:checked+label {
     font-size: 19px;
 }
 
+@media only screen and (max-width: 1316px) {
+    .konikmalar h2 {
+        font-size: 3rem;
+    }
+
+    .konikmalar .span1 {
+        font-size: 3rem;
+    }
+    .cards{
+        margin-top: 30px;
+    }
+    .card1{
+        gap: 10px;
+    }
+    .card2{
+        gap: 10px;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .uzum{
         width: 100%;
@@ -338,13 +355,7 @@ input[type="checkbox"]:checked+label {
         margin-top: 50px;
     }
 
-    .konikmalar h2 {
-        font-size: 3rem;
-    }
-
-    .konikmalar .span1 {
-        font-size: 3rem;
-    }
+    
 
     .cards {
         margin-top: 10vh;

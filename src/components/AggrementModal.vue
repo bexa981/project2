@@ -39,7 +39,8 @@
     display: flex;
     flex-direction: column;
     border: 1px solid #888;
-    width: 100%;
+    width: 400px;
+    text-align: center;
     border-radius: 30px;
   }
   

@@ -99,21 +99,41 @@ onMounted(() => {
 .cards {
     margin-top: 10vh;
 }
+@media only screen and (max-width: 1400px) {
+ .main7{
+    width: 100%;
+    margin: 25px 0;
 
-@media only screen and (max-width: 550px) {
-
-    .main7 h2 {
+    padding: 10px 10px;
+ }
+ .main7 h2 {
         text-align: center;
         font-size: 3rem;
         font-family: 'Oswald', sans-serif;
     }
-
     .main7 span {
         text-align: center;
         font-size: 3rem;
         font-family: 'Oswald', sans-serif;
         color: var(--redColor);
     }
+    .sabablar h3{
+        font-size: 25px;
+    }
+    .sabablar p{
+        font-size: 18px;
+    }
+    .cards{
+        margin-top: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+   
+
+   
 
     .main7 {
         margin: 5vh 1vw 5vh 1vw;

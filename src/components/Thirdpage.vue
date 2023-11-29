@@ -17,7 +17,7 @@ const handleClickItem = () => {
    isOpenModel.value = true;
    // Handle logic to show the payment section
    showAgreement.value = true;
-   showPayment.value = false;
+   showPayment.value = true;
 };
 
 const processPayment = () => {
@@ -34,27 +34,12 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
         <AggrementModal :open="isOpenModel" @close="isOpenModel = false">
          <div>
             <div class="modalBody">
-               <div v-if="showAgreement">
-
-
-                  <h3 style="text-align: center;">Публичная оферта</h3>
-                  <p>
-                     <Offerta style="color: black;"/>
-                  </p>
-                  <div class="tolov">
-                     <div>
-                        <input id="roziman" type="checkbox">
-                        <label for="roziman" style="color: black;">Roziman</label>
-                     </div>
-                     <button @click="processPayment">To'lov qilish</button>
-                    
-                  </div>
-               </div>
-                 <h3 style="color: black;">To'lov qilish usulini tanlang</h3>
+               
+                 <h3 class="tolovQilish">To'lov qilish usulini tanlang</h3>
                <div v-if="showPayment" class="usullari">
                         <!-- Display your payment form or component here -->
-                       <a target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s" alt=""></a>
-                       <a target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
+                       <a class="payme" target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s" alt=""></a>
+                       <a class="uzumm" target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img src="https://static.tildacdn.com/tild3664-3139-4231-b664-663965386239/uzum-footer.png" alt=""></a>
                         
                      </div>
             </div>
@@ -62,7 +47,7 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
       </AggrementModal>
         <div class="bio-image">
             <img class="photo" src="/images/rasm3.png" alt="">
-            <div data-aos="fade-up" data-aos-duration="1500" class="jobs">
+            <!-- <div data-aos="fade-up" data-aos-duration="1500" class="jobs">
                 <div class="bio-card">
                     <img src="https://static.tildacdn.com/tild3563-3361-4632-b861-353864663334/Logo.png" alt="">
                     <div>
@@ -79,10 +64,13 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
                     </div>
 
                 </div>
-            </div>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+            </div> -->
+            <div class="btns">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
                 class="btn2">Ariza qoldirish</button>
                 <button @click="handleClickItem()" class="btn2">To'lov qilish</button>
+            </div>
+          
             <Modal />
         </div>
 
@@ -116,6 +104,7 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
     background-color: gray;
     display: flex;
     justify-content: center;
+    gap: 40%;
     align-items: center;
     padding-top: 20px;
     background-image: url('https://e0.pxfuel.com/wallpapers/528/842/desktop-wallpaper-assemblies-of-the-national-syndicalist-offensive-misc-hq-assemblies-of-the-national-syndicalist-offensive-2019-half-black-half-red.jpg');
@@ -125,9 +114,36 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
     color: white;
     margin: 10px 60px 10px 60px;
     flex-wrap: wrap;
+    position: relative;
     border-radius: 70px;
     height: fit-content;
 
+}
+.usullari{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+
+.usullari a {
+   
+   border-radius: 5px;
+   padding: 10px;
+   margin-left: 5px;
+   transition: .3s;
+   
+}
+.usullari .payme{
+   box-shadow: 2px 2px 10px rgb(114, 224, 220);
+}
+.usullari .uzumm{
+   box-shadow: 2px 2px 10px rgb(147, 34, 217);
+}
+.tolovQilish{
+   font-size: 22px;
+   color: black;
+   margin: 20px 0px;
 }
 .tolov {
    display: flex;
@@ -187,14 +203,17 @@ input[type="checkbox"]:checked+label {
     margin-top: -7px;
 }
 .bio-image {
-    width: 36%;
-    height: fit-content;
-
+     width: 46%;
+     height: fit-content;
+     position: absolute;
+     bottom: 0;
+     left: 0;
 
 }
 
 .bio-image .photo {
-    width: 100%;
+    width: 600px;
+    
 }
 
 .jobs {
@@ -229,7 +248,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .bio-info {
-    width: 35%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,7 +257,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .bio-info h2 {
-    font-size: 4.5rem;
+    font-size: 32px;
     line-height: 1;
     margin-bottom: 20px;
 }
@@ -253,12 +272,11 @@ li {
 }
 
 .bio-info .btn1 {
-    margin-top: 30px;
-    height: 80px;
-    padding: 20px 50px 20px 50px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 20px;
+    padding: 15px;
+    width: 160px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
     cursor: pointer;
     border: none;
     box-shadow: 0 9px rgb(180, 128, 128);
@@ -267,7 +285,10 @@ li {
     transition: .2s;
     margin-bottom: 40px;
 }
-
+.market{
+    display: flex;
+    gap: 10px;
+}
 .bio-info .btn1:active {
     box-shadow: 0 5px rgb(180, 128, 128);
     transform: translateY(4px);
@@ -301,6 +322,48 @@ li {
 
 .btn2:hover {
     background-color: rgb(191, 52, 52);
+}
+@media only screen and (max-width: 1250px) {
+ .bio{
+    margin: 0;
+    gap: 0;
+    flex-direction: column-reverse;
+ }
+ .bio-image{
+    position: static;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .bio-image .photo{
+    width: 400px;
+ }
+ .bio-info{
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 5px;
+ }
+ .btns{
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+ }
+ .btn2 {
+        display: block;
+         margin: 0;
+
+    }
+    .btn1{
+        
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 550px) {

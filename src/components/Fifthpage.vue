@@ -157,55 +157,7 @@ onMounted(() => {
 
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
-                <div>
-                    <p class="left">
-                        6-dars
-                    </p>
-                    <div class="card">
-                        <h3>
-                            Kattalar pozitsiyasi.
-                            <br>
-                            Xayotiga o'z pozitsiyasini olish.
-                            Emotsional xolat,
-                        </h3>
-                        <ul>
-                            <li>siz emotsional xolatingizga ko'ra qaysi pozitsiyada yashamoqdasiz</li>
-                            <li>Qizcha turmushga chiqa olmaydi</li>
-                            <li>Qizcha va bolachada katta miqdorda pullar bo'lmaydi</li>
-                            <li>Qizcha farzand tug'maydi</li>
-                            <li>Bolacha mas'uliyatni his qilmaydi, shu sababli doimiy qarzdorlik</li>
-                            <li>Qizchalar va Bolachalar tez xafa bo'lishi</li>
-                            <li>Qizcha va bolacha uchun doim kimdir nimadir qilib berishi kerak bo'ladi</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1500" class="cards">
-                <div>
-                    <p class="left">
-                        7-dars
-                    </p>
-                    <div class="card">
-                        <h3>
-                            O'z hayotingizda qanday yashaysiz
-
-                            Mening real hayotim
-
-                        </h3>
-                        <ul>
-                            <li>Va ushbu hayotni men qanday yashayman?</li>
-                            <li> Emotsional va shaxsiy holat bilan qanday ishlash kerak?</li>
-                            <li> Sovg'alar va pullarga ega bo'lish</li>
-                            <li>Juftlik munosabati</li>
-                            <li>O'z o'zingiz bilan munosabat</li>
-                            <li>Bolalar bilan munosabat</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+           
         </div>
 
     </div>
@@ -278,6 +230,23 @@ onMounted(() => {
     margin-top: 20px;
     color: var(--redColor);
 }
+@media only screen and (max-width: 1316px) {
+ .all-cards{
+    width: 100%;
+ }
+ .modullar h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .modullar span {
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Oswald', sans-serif;
+    }
+ 
+}
 
 @media only screen and (max-width: 550px) {
  .all-cards{
@@ -293,17 +262,7 @@ onMounted(() => {
         height: auto;
     }
 
-    .modullar h2 {
-        text-align: center;
-        font-size: 3rem;
-        font-family: 'Oswald', sans-serif;
-    }
-
-    .modullar span {
-        text-align: center;
-        font-size: 3rem;
-        font-family: 'Oswald', sans-serif;
-    }
+  
 
 }
 </style>

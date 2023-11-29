@@ -202,16 +202,28 @@ onMounted(() => {
 .vip h3 {
     color: goldenrod;
 }
+@media only screen and (max-width: 1468px) {
+ .tarif{
+    width: 400px!important;
+ }
+ .cards{
+    gap: 10px;
+    margin-top: 50px;
+ }
+ .tariflar-main h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .tariflar-main{
+        margin-top: 26px;
+    }
+}
 
 @media only screen and (max-width: 550px) {
     .tariflar-main{
         margin-top: 6vh;
     }
-    .tariflar-main h2 {
-        font-size: 3rem;
-        
-
-    }
+    
     .cards{
         gap: 70px;
     }

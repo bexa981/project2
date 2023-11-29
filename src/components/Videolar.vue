@@ -114,6 +114,20 @@ onMounted(() => {
     font-weight: 600;
     color: var(--redColor);
 }
+@media only screen and (max-width: 1475px) {
+ .flex-videos{
+    padding: 0;
+    margin-top: 5vh;
+    gap: 20px;
+    width: 100%;
+ }
+ .videos h2{
+        font-size: 3rem;
+    }
+    .videos .span1{
+        font-size: 3rem;
+    }
+}
 @media only screen and (max-width: 550px) {
     .uzum{
         width: 100%;
@@ -123,12 +137,7 @@ onMounted(() => {
         margin-top: 5px;
         padding: 20px;
     }
-    .videos h2{
-        font-size: 2.5rem;
-    }
-    .videos .span1{
-        font-size: 2.5rem;
-    }
+    
 
     .btn {
         flex-direction: column;
