@@ -4,34 +4,26 @@ import Modal from "./Modal.vue";
 
 const items = ref([{
     id: 1,
-    title: 'Turmushga chiqish uchun',
-    info: 'Turmushga chiqishi kechikib o`z juftini topa olmayotganlar, ajrashib ikkinchi xotin bo`lishni xoxlamasdan sog`lom oila qurishni xoxlovchilar,  munosabatlar garmoniyasi va oilani yaratishni o`rganamiz. '
+    title: 'Jahldorlikni mehr bilan almashtirishni istaganlar',
+    info: `Farzandingiz, turmush o‘rtog‘ingiz va yaqinlaringizga g‘azabingizni sochyapsiz, jahlingizni nazorat qila olmayapsiz. Oqibatda esa munosabatlar sovib, o‘rtadagi muhabbat ham qolmadi.  Biz sizga avvalo o‘zingizni yaxshi ko‘rish va ishonish, turmush o‘rtog‘ingiz bilan baxtli munosabatlar qurish va eng asosiysi jahdorlikdan xalos bo‘lishingizga yordam beramiz. `
 },
 {
     id: 2,
-    title: 'Katta daromadga chiqish uchun',
-    info: 'Bir necha yillardan beri ishlab kredit to`lashdan charchaganlar, ko`p ishlasayam pulida barakasi yo`q insonlar, o`zini yuqori daromadini oshirishdagi qo`rquvini yenga olmayotganlar uchun pullar enegiyasiga ochilib katta daromadga bosqichma bosqich chiqishni balanas qonuniga ko`ra o`rganamiz'
+    title: 'Depressiyadan chiqib o‘rniga o‘zini baxtli his qilishni xohlaganlar',
+    info: 'Stressli kunlar, depressiyali oylarga, ular esa ko‘z yoshli yillarga ulanib kelayotgan bo‘lsa. Har qanday holatda ham o‘zingizni to‘liq baxtli his qila olmayapsiz. Keraksizlik hisi sizni tark qilmayapti. Biz bilan Siz depressiya, stress, siqilishlar nimaligini unutasiz. Qalbingizda doim xotirjamlik hisini paydo qilib, atrofdan qidirayotgan baxtni o‘zingizdan topishni o‘rgatamiz'
 },
 {
     id: 3,
-    title: 'Qarzdorlikdan chiqish uchun',
-    info: ' Bu ko`proq ajdodiy programma: "men hamma uchun majburman, o`z hayotimda yashashga haqqim yoq", deb hisoblaydiganlar va doimiy pullardagi qaramlikdan chiqa olmayotgan insonlar uchun pullardagi erkinlikni , barakani birgalikda yaratamiz! Balans qonuniga ko`ra'
+    title: 'Erining xiyonat qilish shubhalarni yo‘qotib, erkin bo‘lishni istaganlar',
+    info: ' Vaziyat tug‘ilishi bilan eringizni  telefonini titkilaysiz. Uyga kech kirib kelsa, shubha gumonlar ich etingizni yeydi, kiyimidan begona atir hidi, soch tolasini beixtiyor izlaysiz,  telefonga qarab kulib o‘tirsa yoki suhbatlashsa yomon hayollar sizni tark etmaydi. Bunday hayot bilan xayrlashish vaqti keldi. Endi siz o‘ziga ishongan, xotirjam, doim yaxshi gumondagi, sevgan va sevilgan ayol bo‘lasiz. Aynan sizga bularning barchasiga erishishni o‘rgataman.'
 },
-{
-    id: 4,
-    title: 'Ortiqcha tana vaznidan sog`lom halos bo`lish uchun',
-    info: 'Ortiqcha vazn bu kuchli himoya, tanadagi to`planib qolgan hafagarchiliklar, tanani his qila olmaslik, hayotdagi himoyani his qila olmaslik, dietalardan ozish marafonlari ta`sir qilmasdan charchaganlar uchun, tanani his qilishni, himoya tana emasligini o`rganib, sog`lom qomadni yaratamiz'
-},
+
 {
     id: 5,
-    title: 'Asl qobiliyatini ochish uchun',
-    info: 'Ish joyini tinmasdan almashtirib, ishxonaga energiyasizlikdan pul uchun majburan boradiganlar, o`ziga yoqmasada  oilani boqish uchun majbur ishlaydiganlar,erkin mazza qilib qobiliyatini ko`rsatib asl qalb kasbini birgalikda topamiz.'
+    title: 'Ajrashish fikridan voz kechib, oilani mustahkam qilishni xohlaganlar',
+    info: 'Doimiy kelishmovchiliklar, kichik sabablar deb ham janjallashaverish, bir-biringizni tushunmaslik. Bularni barchasi ajrim qaroriga olib boradi. Undan boshqa yechim yo‘qdek tuyilaveradi. Yechim bor va u sizda yashirilgan. Men sizga qanday qilib munosabatlarni qutqarish, oilani asrab qolish va mustahkamlashni, eringiz faqat sizni deyishi, vaqt ajratishi ,sovg‘alar berishi, siz orzu qilgan baxtli turmushni yaratishni o‘rgataman.'
 }
-    , {
-    id: 6,
-    title: 'Farzandlari bilan konfliktda charchagan insonlar uchun',
-    info: ' Abort qildirib o`zini aybdorlikdan chiqara olmayotganlar, abortdan keyin turmush o`rtog`i va farzandlari mehrini his qila olmayotganlar uchun kuchli aybdorlik hissini birgalikda qayta ishlab garmoniyaga aylantiramiz.'
-}
+
 
 ])
 import { onMounted } from "vue";
@@ -94,11 +86,11 @@ onMounted(() => {
 
 .cards {
     width: 85%;
-    gap: 50px;
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     margin-top: 70px;
     margin-bottom: 40px;
 }
@@ -109,9 +101,10 @@ onMounted(() => {
     justify-content: space-between;
     align-items: center;
     border: 3px solid var(--redColor);
-    width: 350px;
+    width: 650px;
+    height: 450px!important;
     padding: 20px;
-    height: 565px;
+    height: fit-content;
     border-radius: 10px;
     margin-bottom: 30px;
     transition: .3s;
@@ -163,7 +156,7 @@ onMounted(() => {
     transition: .3s;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
     .main-second {
         margin: 0;
         padding: 5px;
@@ -180,5 +173,13 @@ onMounted(() => {
     .info-top p {
         text-align: center;
         font-size: 18px;
+    }
+    .card1{
+        width: 350px;
+        height: fit-content!important;
+        margin: 0;
+    }
+    .cards{
+        margin: 0;
     }
 }</style>

@@ -7,7 +7,7 @@ import Fifthpage from './components/Fifthpage.vue';
 import Sabab from './components/Sabab.vue'
 import Videolar from './components/Videolar.vue';
 import Tariflar from './components/Tariflar.vue';
-import Savollar from './components/Savollar.vue';
+// import Savollar from './components/Savollar.vue';
 import Contact from './components/Contact.vue';
 </script>
 
@@ -21,7 +21,7 @@ import Contact from './components/Contact.vue';
   <Sabab/>
   <Videolar/>
   <Tariflar/>
-  <Savollar/>
+  <!-- <Savollar/> -->
   <Contact/>
  </div>
 </template>

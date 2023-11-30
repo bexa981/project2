@@ -13,16 +13,16 @@ onMounted(() => {
             o’quvchilarning erishgan natijalari</h2>
         <div class="flex-videos">
             <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
-                <vue3-video-player src="/videos/klent2info.mp4"></vue3-video-player>
+                <vue3-video-player src="/videos/vid1.mp4"></vue3-video-player>
             </div>
             <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
                 <vue3-video-player  src="/videos/klent1.mp4"></vue3-video-player>
             </div>
             <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
-                <vue3-video-player src="/videos/video7.mp4"></vue3-video-player>
+                <vue3-video-player src="/videos/vid2.mp4"></vue3-video-player>
             </div>
             <div data-aos="fade-right" data-aos-duration="1500" class="player-container">
-                <vue3-video-player src="/videos/video8.mp4"></vue3-video-player>
+                <vue3-video-player src="/videos/vid3.mp4"></vue3-video-player>
             </div>
         </div>
         <div data-aos="zoom-out" data-aos-duration="1500" class="btn">

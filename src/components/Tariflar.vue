@@ -14,83 +14,61 @@ onMounted(() => {
 
         <div class="cards">
             <div data-aos="flip-right" data-aos-duration="1500" class="tarif standart">
-                <h3>Silver-online</h3>
+                <h3>Online</h3>
                 <div class="kursi">
                     <ul>
-                        <li>Qayta aloqa yo'q darslarni ko'radi,mustaqil o'zlashtiradi</li>
-                        <li>7 ta qonuniyatga oid dars.</li>
-                        <li>2 ta jonli amaliyot(4-darsda onaga hafagarchilik bilan amaliyot, 5-darsda otaga hafagarchilik bilan amaliyot guruhi)</li>
-                        <li>Kurs tinglanganligi haqida web versiyada sertifikat</li>
+                        <li>Yopiq telegram guruhda 5 ta onlayn dars</li>
+                        <li>Amaliy dars</li>
+                        <li>Yopiq guruhda foydali tavsiyalar</li>
+                        <li>Online darslarni qayta ko'rish uchun yozib olingan videosi</li>
+                        <li>Shoshista Jurabayevaning barcha servislari uchun 10% skidka</li>
                         
                     </ul>
-                    <h4 class="skidka"> 4.000.000</h4>
-                    <h4 class="narxi">2.500.000</h4>
+                    <h4 class="skidka"> 799.000 9-dekabr 23:59 gacha, 599.000 6-dekabr 23:59 gacha</h4>
+                    <h4 class="narxi">399.000 so'm <br> 3-dekabr 23:59 gacha</h4>
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
-                    <p style="font-size: 20px;">30% CHEGIRMA</p>
+                    <p style="font-size: 20px;">10% CHEGIRMA</p>
                 </div>
 
             </div>
             <div data-aos="flip-right" data-aos-duration="1500" class="tarif premium">
-                <h3>GOLD-online</h3>
+                <h3>Offline</h3>
                 <div class="kursi">
                     <ul>
-                        <li>7 ta qonuniyatga oid darslar</li>
-                        <li>6 ta Amaliy darslarda</li>
-                        <li>Master Shohista Adhamjonovna bilan</li>
-                        <li>Birga ishlash jonli tarzda</li>
-                        <li>Xar bir ishtirokchi uchun </li>
-                        <li>Kvantoviy Diagnostika qilib beradi</li>
-                        <li>Kuratorlar nazorati .</li>
-                        <li>Kurs órganilganligi haqida jismoniy sertifikat</li>
-                        <li>Pullik bitiruv oqshomida ishtirok etish</li>
-
-                        <li>Amaliyot 1 Irarxiya joylashuv,Oila Irarxiyasida o’z o’rniga joylashuv.</li>
-                        <li>Amaliyot 2 Munosabatlarda Aybdorlikdan chiqish </li>
-                        <li>Amaliyot 3 Pullardagi
-                            Aybdorlikdan chiqish </li>
-                        <li>Amaliyot 4 Tanani qabul qilish, his qilish amaliyoti.</li>
-                        <li>Amaliyot 5 Shartsiz Sevgi o’zini sevishga o’rganish amaliyoti</li>
-                        <li>Amaliyot 6 Fokisirovka qilish real hayotni yaratish uchun amaliyoti</li>
-                        <li>Amaliyot 7 Eng baxtli hayotim
-                            Regressiya yo’li orqali ong ostida yangi Neyron hosil qilish amaliyoti</li>
+                        <li>Yopiq 5 ta oflayn seminar (Cambridge universteti binosida)</li>
+                        <li>Amaliy dars</li>
+                        <li>Har bir o'quvchi bilan eng aktual muammosini aniqlab beruvchi 1 ta bepul diagnostika</li>
+                        <li>Yopiq guruhda foydali tavsiyalar</li>
+                        <li>Kuratorlar yordami </li>
+                        <li>Sertifikat</li>
+                        <li>Online darslarni qayta ko'rish uchun yozib olingan videosi</li>
+                        <li>Shoshista Jurabayevaning barcha servislari uchun 15% skidka</li>
+                       
                         
                     </ul>
-                    <h4 class="skidka"> 5.500.000</h4>
-                    <h4 class="narxi">3.800.000</h4>
+                    <h4 class="skidka"> 999.000 9-dekabr 23:59 gacha, 799.000 6-dekabr 23:59 gacha</h4>
+                    <h4 class="narxi">499.000 so'm <br> 3-dekabr 23:59 gacha)</h4>
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
-                    <p style="font-size: 20px;">30% CHEGIRMA</p>
+                    <p style="font-size: 20px;">15% CHEGIRMA</p>
                 </div>
 
             </div>
             <div data-aos="flip-right" data-aos-duration="1500" class="tarif vip">
-                <h3>VIP-offline</h3>
+                <h3>VIP</h3>
                 <div class="kursi">
                     <ul>
-                        <li>7 ta qonuniyatga oid darslar</li>
-                        <li>6 ta Amaliy darslarda</li>
-                        <li>Master Shohista Adhamjonovna bilan</li>
-                        <li>Birga ishlash jonli tarzda</li>
-                        <li>Xar bir ishtirokchi uchun </li>
-                        <li>Kvantoviy Diagnostika qilib beradi</li>
-                        <li>Kuratorlar nazorati .</li>
-                        <li>Kurs órganilganligi haqida jismoniy sertifikat</li>
-                        <li>Pullik bitiruv oqshomida ishtirok etish</li>
-
-                        <li>Amaliyot 1 Irarxiya joylashuv,Oila Irarxiyasida o’z o’rniga joylashuv.</li>
-                        <li>Amaliyot 2 Munosabatlarda Aybdorlikdan chiqish </li>
-                        <li>Amaliyot 3 Pullardagi
-                            Aybdorlikdan chiqish </li>
-                        <li>Amaliyot 4 Tanani qabul qilish, his qilish amaliyoti.</li>
-                        <li>Amaliyot 5 Shartsiz Sevgi o’zini sevishga o’rganish amaliyoti</li>
-                        <li>Amaliyot 6 Fokisirovka qilish real hayotni yaratish uchun amaliyoti</li>
-                        <li>Amaliyot 7 Eng baxtli hayotim
-                            Regressiya yo’li orqali ong ostida yangi Neyron hosil qilish amaliyoti</li>
+                        <li>Yopiq 5 ta oflayn seminar (Cambridge universteti binosida)</li>
+                        <li>Amaliy dars</li>
+                        <li>1 ta individual konsultatsiya (Psixogenetika yordamida muammoni aniqlab va eng samarali yechimni ko'rsatuvchi)</li>
+                        <li>Sertifikat</li>
+                        <li>Online darslarni qayta ko'rish uchun yozib olingan videosi</li>
+                        <li>Shoshista Jurabayevaning barcha servislari uchun 20% skidka</li>
                        
                     </ul>
-                    <h4 class="skidka"> 8.300.000</h4>
-                    <h4 class="narxi">5.800.000</h4>
+                    <h4 class="skidka"> 1.999.000 9-dekabr 23:59 gacha, 1.799.000 6-dekabr 23:59 gacha</h4>
+                    <h4 class="narxi">1.499.000 so'm <br> 3-dekabr 23:59 gacha</h4>
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
-                    <p style="font-size: 20px;">30% CHEGIRMA</p>
+                    <p style="font-size: 20px;">20% CHEGIRMA</p>
                   
                 </div>
 
@@ -111,7 +89,7 @@ onMounted(() => {
     margin-bottom: 50px;
 }
 .skidka{
-    font-size: 30px;
+    font-size: 25px;
     color: gray;
     text-decoration: line-through;
 }

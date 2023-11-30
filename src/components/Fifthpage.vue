@@ -54,6 +54,8 @@ onMounted(() => {
                             <li>Yoki ajdodlarim xislarida yashab hayotimni o'zgartira olmayapmanmi</li>
                             <li>Irarxiya qonuni</li>
                             <li>Oila Irarxiyasida mani joyim qayerda?</li>
+                            <li>Sizning hayotingizda ajdodlarning va takrorlanuvchi ssenariylarning ahamiyati</li>
+                            <li>Genetik takrorlanuvchi ssenariylardan chiqish</li>
                         </ul>
                     </div>
                 </div>
@@ -66,13 +68,13 @@ onMounted(() => {
                     </p>
                     <div class="card">
                         <h3>
-                            Ajdodlar. Ajdodlarimga tegishli ekanligimizni isbotlab yashash.
+                            Munosabatlar
                             <br>
         
                         </h3>
                         <ul>
-                            <li>Sizning hayotingizda ajdodlarning va takrorlanuvchi ssenariylarning ahamiyati</li>
-                            <li>Genetik takrorlanuvchi ssenariylardan chiqish</li>
+                           
+                          
                             <li>Ajdodlar energiyasi bilan ulanish</li>
                             <li>Ajdodlardagi tug'ilmagan bolalar abortlar va bola tushishi</li>
                             <li>Kuchli aybdorlik xissi </li>

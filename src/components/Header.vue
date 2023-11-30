@@ -35,11 +35,12 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
       <AggrementModal :open="isOpenModel" @close="isOpenModel = false">
          <div>
             <div class="modalBody">
-               
+
                <h3 class="tolovQilish">To'lov qilish usulini tanlang</h3>
                <div v-if="showPayment" class="usullari">
                   <!-- Display your payment form or component here -->
-                  <a class="payme" target="_blank" href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img
+                  <a class="payme" target="_blank"
+                     href="https://payme.uz/fallback/merchant/?id=653bad1074b04dc1cef6672e"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKOJTi7IS2hedneNE8vtAntLI8PF-e510Ix0_Oc1P&s"
                         alt=""></a>
                   <a class="uzumm" target="_blank" href="https://www.apelsin.uz/open-service?serviceId=498611485"><img
@@ -51,12 +52,12 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
       </AggrementModal>
       <div class="left-info">
          <div class="logo">
-            <p class="name-logo"><img width="250px" src="/images/logotipe.png" alt="">
-            </p>
-            <p class="title">Hayotingizni 180 gradusga o’zgartirib, o’z
-               hohish istaklaringiz orqali Orzuyingizdagi Hayotni birgalikda yaratamiz</p>
+            <!-- <p class="name-logo"><img width="250px" src="/images/logotipe.png" alt="">
+            </p> -->
+            <p class="title">Psixogenetikaning asosiy 5 ta qoidalarini o'rganib ideal munosabatlarni shakllantirishni
+               boshlang</p>
          </div>
-         <h1 class="name">Hayot navigatori</h1>
+         <h1 class="name">Munosabatlarni yaxshilash uchun 5 ta qadam</h1>
          <p class="title2">Yohud orzularim yaratuvchisiman</p>
 
          <button @click="handleClickItem()" class="show">To'lov qilish</button>
@@ -98,7 +99,8 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
    align-items: center;
    padding: 10px;
 }
-.tolovQilish{
+
+.tolovQilish {
    font-size: 22px;
    margin: 20px 0px;
 }
@@ -106,7 +108,8 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
 .usullari img {
    width: 120px;
 }
-.usullari{
+
+.usullari {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -114,19 +117,22 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
 }
 
 .usullari a {
-   
+
    border-radius: 5px;
    padding: 10px;
    margin-left: 5px;
    transition: .3s;
-   
+
 }
-.usullari .payme{
+
+.usullari .payme {
    box-shadow: 2px 2px 10px rgb(114, 224, 220);
 }
-.usullari .uzumm{
+
+.usullari .uzumm {
    box-shadow: 2px 2px 10px rgb(147, 34, 217);
 }
+
 .tolov button {
    padding: 5px;
    border-radius: 5px;
@@ -181,7 +187,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .left-info .name {
-   font-size: 6rem;
+   font-size: 3rem;
    line-height: 1em;
    font-weight: 600;
    font-family: 'Oswald', sans-serif;
@@ -215,7 +221,7 @@ input[type="checkbox"]:checked+label {
 .left-info button {
    margin-top: 0px;
    width: 300px;
-   padding: 20px 50px ;
+   padding: 20px 50px;
    font-size: 20px;
    font-weight: 600;
    border-radius: 20px;
@@ -250,22 +256,25 @@ input[type="checkbox"]:checked+label {
 
    width: 70%;
 }
+
 @media only screen and (max-width: 1250px) {
-   .header{
+   .header {
       margin: 0;
-      
+
    }
-   .left-info{
+
+   .left-info {
       padding-left: 50px;
    }
 }
+
 @media only screen and (max-width: 947px) {
-   .header{
+   .header {
       margin: 0;
       flex-wrap: wrap;
-      
+
    }
-   
+
 }
 
 @media only screen and (max-width: 550px) {
