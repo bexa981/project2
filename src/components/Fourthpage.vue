@@ -136,7 +136,7 @@ onMounted(() => {
 
 
             <p> Bu kurs aniq siz uchun,
-                <span class="span"> 30% chegirma olib </span> xoziroq kursga a'zo bo'ling
+                <span class="span"> 20% chegirma olib </span> xoziroq kursga a'zo bo'ling
             </p>
 
         </div>
