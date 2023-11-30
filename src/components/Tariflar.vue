@@ -47,7 +47,7 @@ onMounted(() => {
                         
                     </ul>
                     <h4 class="skidka"> 999.000 9-dekabr 23:59 gacha, <br> 799.000 6-dekabr 23:59 gacha</h4>
-                    <h4 class="narxi">499.000 so'm <br> 3-dekabr 23:59 gacha</h4>
+                    <h4 class="narxi">599.000 so'm <br> 3-dekabr 23:59 gacha</h4>
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
                     <p class="chegirma" style="font-size: 20px;">50% CHEGIRMA</p>
                 </div>

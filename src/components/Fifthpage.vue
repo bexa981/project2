@@ -68,19 +68,17 @@ onMounted(() => {
                     </p>
                     <div class="card">
                         <h3>
-                            Munosabatlar
+                            O’ziga bo’gan ishonchni shakllantirish
                             <br>
         
                         </h3>
                         <ul>
                            
                           
-                            <li>Ajdodlar energiyasi bilan ulanish</li>
-                            <li>Ajdodlardagi tug'ilmagan bolalar abortlar va bola tushishi</li>
-                            <li>Kuchli aybdorlik xissi </li>
-                            <li>Kuchli qo'rquv</li>
-                            <li>Kuchli ishonchsizlik</li>
-                            <li>Kuchli vayronkor-barbod qiluvchi xislar. Insonni qiynovchi o'lim hissi</li>
+                            <li>Ichki va tashqi dunyo</li>
+                            <li>Dunyoga insonlarga bo’gan ishonch</li>
+                            <li>Mening potensial energiyam va mening tanlovim</li>
+                          
 
                         </ul>
                     </div>
@@ -119,9 +117,7 @@ onMounted(() => {
                     </p>
                     <div class="card">
                         <h3>
-                            Ona sizdagi ona
-                            <br>
-                            Ona bilan munosabatlar
+                            Iseal munosabatlarni shakllantirish
                         </h3>
                         <ul>
                             <li>Turmush o'rtoq bilan chiqisha omaslik</li>
@@ -141,17 +137,13 @@ onMounted(() => {
                     </p>
                     <div class="card">
                         <h3>
-                            Otangiz siz uchun kim
-                            <br>
-                            Ona va ota bu sani otang
-                            <br>
-                            Ota bu himoya
+                            Missiyani aniqlash
+                           
                         </h3>
                         <ul>
-                            <li>Masshtab yani pulda o'sish</li>
-                            <li>Himoyani his qilish</li>
-                            <li>O'ziga bo'lgan ishonchni ishlash</li>
-                            <li>Otaga bo'lgan xafagarchiliklarni ishlash</li>
+                            <li>Hayotiy vazifamiz nima?</li>
+                            <li>O’zlikni qanday anglash mumkin?</li>
+                            <li>Hotirjamlikda, garmoniya bilan yashash uchun metodlar</li>
 
                         </ul>
                     </div>
