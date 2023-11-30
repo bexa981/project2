@@ -25,13 +25,13 @@ onMounted(() => {
                             malumotlar
                         </h3>
                         <ul>
-                            <li>Kursni davomiyligi 1.5 oy</li>
-                            <li>Nazariy dars: 7 ta</li>
-                            <li>Amaliy dars: 6 ta</li>
-                            <li>Bir xaftada 1 ta nazariy 1 ta amaliy dars</li>
-                            <li>Nazariy darsda o'tilgan mavzuni amaliy darsda ishlanadi</li>
-                            <li>4 va 5 dars nazariy va amaliy darslari bir vaqtda bo'ladi</li>
-                            <li>Shunda 4 ta alohida amaliy dars qoladi</li>
+                            <li>7-Dekabrdan boshlanadi</li>
+                            <li>Viloyatdagilar va oflayn qatnashishga imkoni yo'qlar uchun online telegram orqali</li>
+                            <li>Toshkent shahrida va qatnashishni istaganlar uchun offline bo'ladi (Cambridge universiteti binosi, orientir Novza metro)</li>
+                            <li>Offline vaqti soat 11:00 dan 13:00 gacha</li>
+                            <li>Online vaqti soat 20:00 dan 22:00 gacha</li>
+                            <li>Davomiyligi 2 hafta</li>
+                    
                         </ul>
                     </div>
                 </div>
@@ -222,7 +222,7 @@ onMounted(() => {
     line-height: 2rem;
     font-size: 18px;
     z-index: 5;
-    height: 600px;
+    height: 640px;
     box-shadow: 5px 5px 20px rgb(191, 190, 190), -5px -5px 20px rgb(193, 192, 192);
 }
 

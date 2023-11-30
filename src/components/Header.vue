@@ -58,7 +58,7 @@ showAgreement, isOpenModel, showPayment, handleClickItem, processPayment
                boshlang</p>
          </div>
          <h1 class="name">Munosabatlarni yaxshilash uchun 5 ta qadam</h1>
-         <p class="title2">Yohud orzularim yaratuvchisiman</p>
+    
 
          <button @click="handleClickItem()" class="show">To'lov qilish</button>
          <button type="button" class="show" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -173,7 +173,7 @@ input[type="checkbox"]:checked+label {
    flex-direction: column;
    align-items: first baseline;
    padding-left: 15%;
-   padding-top: 1vh;
+   padding-top: 5vh;
 }
 
 .left-info .name-logo {
@@ -340,7 +340,7 @@ input[type="checkbox"]:checked+label {
    }
 
    .left-info .name {
-      font-size: 4em;
+      font-size: 2em;
       width: fit-content;
       text-align: center;
    }
@@ -348,7 +348,7 @@ input[type="checkbox"]:checked+label {
    .hiden {
       display: block;
       margin-top: 0;
-      margin-bottom: 40px;
+      margin-bottom: 15px;
       width: 95%;
    }
 

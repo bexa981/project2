@@ -95,40 +95,7 @@ onMounted(() => {
                         O‘z qadrini bilgan, o‘ziga ishongan, energiyaga to‘la, baxtli ayol bo‘lish sirlarini o‘rgatamiz.</p>
                 </div>
             </div>
-            <div class="card2">
-                <div class="card">
-                    <div data-aos="fade-up" data-aos-duration="1500" class="icon">
-                        <img src="/images/3d-cube.png" alt="">
-                    </div>
-                    <h4 data-aos="fade-right" data-aos-duration="1500">Sog'lom tanani his qilish</h4>
-                    <p data-aos="fade-right" data-aos-duration="1500">Tana bu qalb haqida gapiradigan belgi, chunki
-                        tanangizda kasallanish yoki diskomfort, ortiqcha vazn seziladigan bo'lsa yokida bor bo'lsa
-                        tana,qalb,ruh
-                        uyg'un emas, siz qalbingizni eshitmaysiz, qalb bu yagona yaratuvchining uyi demak yaratuvchi bilan
-                        qalban
-                        ulanmagansiz, tanani his qilish orqali qalb va ruh uyg'unligini birlashtiramiz</p>
-                </div>
-                <div class="card">
-                    <div data-aos="fade-up" data-aos-duration="1500" class="icon">
-                        <img src="/images/growth.png" alt="">
-                    </div>
-                    <h4 data-aos="fade-right" data-aos-duration="1500">Hayot Sovg'alariga ochilish</h4>
-                    <p data-aos="fade-right" data-aos-duration="1500">Baxtsiz inson o'zga insonlar hayotiga qiziqadi, baxtli
-                        inson esa o'z hayotidagi sovg'alardan ortolmaydi, biz qachonki o'zimizni kimligigimizni
-                        unutganimizda yaratuvchidan va hayotiy tizimdan uzoqlashamiz, shu paytda hayotdagi barcha
-                        nematlardan uzilamiz, oila Irarxiyasi boyicha joyimizda turganimizda hayotiy sovg'alarga erishamiz
-                    </p>
-                </div>
-                <div class="card">
-                    <div data-aos="fade-up" data-aos-duration="1500" class="icon">
-                        <img src="/images/care.png" alt="">
-                    </div>
-                    <h4 data-aos="fade-right" data-aos-duration="1500">Pullardagi barakani his qilish</h4>
-                    <p data-aos="fade-right" data-aos-duration="1500">Ichki dunyodagi xotirjamlik tashqi dunyodagi kenglikni
-                        keltirib chiqaradi, bu kenglikni his qilganingizda energiya patoklariz ochiladi, qancha ko'p
-                        energiyaga toyinganliginingiz sari pullaringizdagi baraka ham oshadi.</p>
-                </div>
-            </div>
+          
         </div>
 
         <div data-aos="zoom-out" data-aos-duration="1500" class="btn">
@@ -136,7 +103,7 @@ onMounted(() => {
 
 
             <p> Bu kurs aniq siz uchun,
-                <span class="span"> 20% chegirma olib </span> xoziroq kursga a'zo bo'ling
+                <span class="span"> 50% chegirma olib </span> xoziroq kursga a'zo bo'ling
             </p>
 
         </div>
@@ -414,12 +381,13 @@ input[type="checkbox"]:checked+label {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: fit-content;
+        width: 90%;
 
     }
 
     .btn button {
         padding: 10px;
-        height: 80px;
+        
+        width: 100%;
     }
 }</style>

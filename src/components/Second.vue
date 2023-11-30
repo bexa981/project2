@@ -157,6 +157,7 @@ onMounted(() => {
 }
 
 @media only screen and (max-width: 650px) {
+    
     .main-second {
         margin: 0;
         padding: 5px;
@@ -173,13 +174,22 @@ onMounted(() => {
     .info-top p {
         text-align: center;
         font-size: 18px;
+        margin-bottom: 40px;
     }
     .card1{
-        width: 350px;
+        width: 100%;
         height: fit-content!important;
         margin: 0;
+        font-size: 17px;
     }
     .cards{
         margin: 0;
+        width: 100%;
+    }
+    .cards .card-title{
+        font-size: 20px;
+    }
+    .cards .card-info{
+        font-size: 18px;
     }
 }</style>

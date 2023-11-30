@@ -24,10 +24,10 @@ onMounted(() => {
                         <li>Shoshista Jurabayevaning barcha servislari uchun 10% skidka</li>
                         
                     </ul>
-                    <h4 class="skidka"> 799.000 9-dekabr 23:59 gacha, 599.000 6-dekabr 23:59 gacha</h4>
+                    <h4 class="skidka"> 799.000 9-dekabr 23:59 gacha, <br> 599.000 6-dekabr 23:59 gacha</h4>
                     <h4 class="narxi">399.000 so'm <br> 3-dekabr 23:59 gacha</h4>
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
-                    <p style="font-size: 20px;">10% CHEGIRMA</p>
+                    <p class="chegirma" style="font-size: 20px;">50% CHEGIRMA</p>
                 </div>
 
             </div>
@@ -46,10 +46,10 @@ onMounted(() => {
                        
                         
                     </ul>
-                    <h4 class="skidka"> 999.000 9-dekabr 23:59 gacha, 799.000 6-dekabr 23:59 gacha</h4>
-                    <h4 class="narxi">499.000 so'm <br> 3-dekabr 23:59 gacha)</h4>
+                    <h4 class="skidka"> 999.000 9-dekabr 23:59 gacha, <br> 799.000 6-dekabr 23:59 gacha</h4>
+                    <h4 class="narxi">499.000 so'm <br> 3-dekabr 23:59 gacha</h4>
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
-                    <p style="font-size: 20px;">15% CHEGIRMA</p>
+                    <p class="chegirma" style="font-size: 20px;">50% CHEGIRMA</p>
                 </div>
 
             </div>
@@ -65,10 +65,10 @@ onMounted(() => {
                         <li>Shoshista Jurabayevaning barcha servislari uchun 20% skidka</li>
                        
                     </ul>
-                    <h4 class="skidka"> 1.999.000 9-dekabr 23:59 gacha, 1.799.000 6-dekabr 23:59 gacha</h4>
+                    <h4 class="skidka"> 1.999.000 9-dekabr 23:59 gacha, <br> 1.799.000 6-dekabr 23:59 gacha</h4>
                     <h4 class="narxi">1.499.000 so'm <br> 3-dekabr 23:59 gacha</h4>
                     <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Kursga Yozilish</button>
-                    <p style="font-size: 20px;">20% CHEGIRMA</p>
+                    <p class="chegirma" style="font-size: 20px;">25% CHEGIRMA</p>
                   
                 </div>
 
@@ -89,12 +89,15 @@ onMounted(() => {
     margin-bottom: 50px;
 }
 .skidka{
-    font-size: 25px;
-    color: gray;
+    font-size: 22px;
+    color: red;
     text-decoration: line-through;
 }
+.chegirma{
+    color: green;
+}
 .narxi{
- font-size: 30px;
+ font-size: 24px;
  
 }
 .cards {
@@ -200,6 +203,9 @@ onMounted(() => {
 @media only screen and (max-width: 550px) {
     .tariflar-main{
         margin-top: 6vh;
+    }
+    .tariflar-main h2{
+       padding-bottom: 30px;
     }
     
     .cards{
